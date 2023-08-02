@@ -32,6 +32,8 @@
   display: flex;
   width: 730px;
   overflow: hidden;
+  flex-shrink: 0;
+  margin-left: -1px;
 }
 
 .main-container .banner .left-area a {
@@ -45,7 +47,8 @@
 .main-container .banner .right-area {
   position: relative;
   height: 100%;
-  box-shadow: 0 0 30px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+  flex-shrink: 0;
 }
 
 .main-container .banner .right-area .download {
@@ -105,3 +108,7 @@
   background-position: 0 -578px;
 }
 
+.box {
+  height: 200px;
+  background-color: #f00;
+}
