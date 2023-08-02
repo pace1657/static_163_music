@@ -1,0 +1,107 @@
+.main-container .banner {
+  position: relative;
+  height: 285px;
+}
+
+/* 高斯模糊背景 */
+.main-container .banner .blur-cover {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container .banner .blur-cover img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: scale(200%) translateX(-50%) translateY(-50%);
+  transform-origin: 0 0;
+  filter: blur(100px);
+}
+
+/* 轮播图区域 */
+.main-container .banner .content-area {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-container .banner .left-area {
+  display: flex;
+  width: 730px;
+  overflow: hidden;
+}
+
+.main-container .banner .left-area a {
+  display: inline-block;
+}
+
+.main-container .banner .left-area img {
+  width: 730px;
+}
+
+.main-container .banner .right-area {
+  position: relative;
+  height: 100%;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, .2);
+}
+
+.main-container .banner .right-area .download {
+  width: 254px;
+  height: 100%;
+  background: url("../assets/images/download.png");
+}
+
+.main-container .banner .right-area a {
+  display: inline-block;
+  width: 215px;
+  height: 56px;
+  margin: 186px 0 0 19px;
+  text-indent: -9999px;
+}
+
+.main-container .banner .right-area a:hover {
+  background: url("../assets/images/download.png") 0 -290px;
+}
+
+.main-container .banner .right-area .download-desc {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  color: #8d8d8d;
+  text-align: center;
+}
+
+.main-container .banner .content-area .prev,
+.main-container .banner .content-area .next {
+  position: absolute;
+  width: 37px;
+  height: 63px;
+  background: url("../assets/images/banner.png");
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.main-container .banner .content-area .prev {
+  left: -68px;
+  background-position: 0 -360px;
+}
+
+.main-container .banner .content-area .prev:hover {
+  background-position: 0 -430px;
+}
+
+.main-container .banner .content-area .next {
+  right: -68px;
+  background-position: 0 -508px;
+}
+
+.main-container .banner .content-area .next:hover {
+  background-position: 0 -578px;
+}
+
