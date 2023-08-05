@@ -29,19 +29,45 @@
 }
 
 .main-container .banner .left-area {
-  display: flex;
-  width: 730px;
-  overflow: hidden;
-  flex-shrink: 0;
+  position: relative;
+  height: 100%;
   margin-left: -1px;
 }
 
-.main-container .banner .left-area a {
+.main-container .banner .banner-list {
+  display: flex;
+  width: 730px;
+  overflow: hidden;
+}
+
+.main-container .banner .banner-list a {
   display: inline-block;
 }
 
-.main-container .banner .left-area img {
+.main-container .banner .banner-list img {
   width: 730px;
+}
+
+.main-container .banner .banner-index {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+}
+
+.main-container .banner .banner-index a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  background: url("../assets/images/banner.png") 3px -343px;
+}
+
+.main-container .banner .banner-index a.active,
+.main-container .banner .banner-index a:hover {
+  background-position: -16px -343px;
 }
 
 .main-container .banner .right-area {
