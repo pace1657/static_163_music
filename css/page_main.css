@@ -31,7 +31,6 @@
 .main-container .banner .left-area {
   position: relative;
   height: 100%;
-  margin-left: -1px;
 }
 
 .main-container .banner .banner-list {
@@ -75,6 +74,7 @@
   height: 100%;
   box-shadow: 0 0 30px rgba(0, 0, 0, .2);
   flex-shrink: 0;
+  margin-left: -1px;
 }
 
 .main-container .banner .right-area .download {
@@ -134,7 +134,54 @@
   background-position: 0 -578px;
 }
 
-.box {
+/* 主界面区域 */
+.main-container .content {
+  border-bottom: 1px solid #d3d3d3;
+  background-color: #f5f5f5;
+}
+
+.main-container .content .music-content {
+  display: flex;
+  border: 1px solid #d3d3d3;
+  border-top: none;
+  border-bottom: none;
+  background-image: url("../assets/images/content-background.png");
   height: 200px;
-  background-color: #f00;
+}
+
+.main-container .content .left-area {
+  flex: 1;
+  padding: 20px;
+}
+.main-container .content .right-area {
+  width: 250px;
+}
+
+.main-container .content .user-login {
+  height: 126px;
+  background: url("../assets/images/content-sprite.png") 0 0;
+}
+
+.main-container .content .user-login .user-login-desc {
+  width: 205px;
+  margin: 0 auto;
+  padding: 16px 0;
+  line-height: 22px;
+  color: #666;
+}
+
+.main-container .content .user-login .user-login-button {
+  display: block;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background: url("../assets/images/content-sprite.png") 0 -195px;
+  text-shadow: 0 1px 0 #8a060b;
+}
+
+.main-container .content .user-login .user-login-button:hover {
+  background-position: -110px -195px;
 }
