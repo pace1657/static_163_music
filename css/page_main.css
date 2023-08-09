@@ -148,11 +148,11 @@
   background-image: url("../assets/images/content-background.png");
 }
 
-.main-container .content .left-area {
+.main-container .content .content-left-area {
   flex: 1;
   padding: 20px;
 }
-.main-container .content .right-area {
+.main-container .content .content-right-area {
   width: 250px;
 }
 
@@ -306,5 +306,107 @@
 
 .main-container .content .author-info .desc {
   color: #666;
+}
+
+/* 热门推荐 */
+.main-container .content .recommend-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 20px;
+}
+
+.main-container .content .recommend-list .item {
+  width: 140px;
+  height: 230px;
+}
+
+.main-container .content .recommend-list .album {
+  position: relative;
+}
+
+.main-container .content .recommend-list .album img {
+  display: block;
+  width: 140px;
+  height: 140px;
+}
+
+.main-container .content .recommend-list .album .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/coverall.png") no-repeat 0 0;
+}
+
+.main-container .content .recommend-list .album .info {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  padding: 0 10px;
+  width: 100%;
+  height: 27px;
+  color: #ccc;
+  background: url("../assets/images/coverall.png") no-repeat 0 -537px;
+  box-sizing: border-box;
+}
+
+.main-container .content .recommend-list .album .count::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  top: 1px;
+  width: 14px;
+  height: 11px;
+  background: url("../assets/images/iconall.png") no-repeat 0 -24px;
+}
+
+.main-container .content .recommend-list .album .play {
+  width: 16px;
+  height: 17px;
+  background: url("../assets/images/iconall.png") no-repeat 0 0;
+}
+
+.main-container .content .recommend-list .album .play:hover {
+  background-position: 0 -60px;
+}
+
+.main-container .content .recommend-list .desc {
+  /* display: block; */
+  width: 100%;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 3行后显示省略号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.main-container .content .recommend-list .desc:hover {
+  text-decoration: underline;
+}
+
+.main-container .content .recommend-list .desc.radio::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+  width: 35px;
+  height: 15px;
+  background: url("../assets/images/icon.png") no-repeat -31px -658px;
+}
+
+/* 新碟上架 */
+.main-container .content .new-disc {
+  margin-top: 35px;
 }
 

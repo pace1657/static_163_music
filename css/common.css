@@ -22,6 +22,56 @@
   border-bottom: 1px solid #ccc;
 }
 
+/* 通用头部2 */
+.common_header_02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 6px 34px;
+  font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid #C10D0C;
+  background: url("../assets/images/content-sprite.png") no-repeat -225px -156px;
+}
+
+.common_header_02 .left-area {
+  display: flex;
+  align-items: center;
+}
+
+.common_header_02 .left-area .title {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.common_header_02 .left-area .category {
+  display: flex;
+  color: #ccc;
+  margin-left: 10px;
+}
+
+.common_header_02 .left-area .category li {
+  margin-left: 12px;
+}
+
+.common_header_02 .left-area .category a {
+  color: #666;
+}
+
+.common_header_02 .left-area .category a:hover,
+.common_header_02 .right-area .more:hover {
+  text-decoration: underline;
+}
+
+.common_header_02 .right-area::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  background: url("../assets/images/content-sprite.png") no-repeat 0 -240px;
+}
+
 /* 通用按钮1 */
 .common_button_01 {
   display: block;
