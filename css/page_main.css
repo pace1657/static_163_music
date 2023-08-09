@@ -223,15 +223,16 @@
 }
 
 .main-container .content .singer-list a .singer-info {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 148px;
   padding: 0 15px;
   border: 1px solid #e9e9e9;
   border-left: none;
   box-sizing: border-box;
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 .main-container .content .singer-list a:hover .singer-info {
