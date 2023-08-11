@@ -151,6 +151,7 @@
 .main-container .content .content-left-area {
   flex: 1;
   padding: 20px;
+  overflow: hidden;
 }
 .main-container .content .content-right-area {
   width: 250px;
@@ -418,9 +419,117 @@
 }
 
 .main-container .content .new-disc .disc-inner {
-  width: 100%;
+  position: relative;
   height: 100%;
+  padding: 0 20px 0 25px;
   border: 1px solid #fff;
   background-color: #f5f5f5;
   box-sizing: border-box;
+}
+
+.main-container .content .new-disc .scroll {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container .content .new-disc .disc-list {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.main-container .content .new-disc .disc-list .item {
+  position: relative;
+  width: 118px;
+  background: url("../assets/images/content-sprite.png") no-repeat -260px 100px;
+}
+
+.main-container .content .disc-list img {
+  width: 100px;
+  height: 100px;
+}
+
+.main-container .content .disc-list .cover {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: url("../assets/images/coverall.png") no-repeat 0 -570px;
+}
+
+.main-container .content .disc-list .play {
+  position: absolute;
+  display: none;
+  width: 22px;
+  height: 22px;
+  bottom: 57px;
+  right: 25px;
+  background: url("../assets/images/iconall.png") no-repeat 0 -85px;
+}
+
+.main-container .content .disc-list .cover:hover + .play,
+.main-container .content .disc-list .play:hover {
+  display: block;
+}
+
+.main-container .content .disc-list .info {
+  padding: 7px 15px 0 0;
+  box-sizing: border-box;
+}
+
+.main-container .content .disc-list .info div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-container .content .disc-list .info a {
+  color: #000;
+}
+
+.main-container .content .disc-list .info a:hover {
+  text-decoration: underline;
+}
+
+.main-container .content .disc-list .info .desc {
+  margin-top: 5px;
+  color: #666;
+}
+
+.main-container .content .new-disc .disc-inner .prev,
+.main-container .content .new-disc .disc-inner .next {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 60px;
+  background: url("../assets/images/content-sprite.png") no-repeat;
+}
+
+.main-container .content .new-disc .disc-inner .prev {
+  background-position: -260px -75px;
+  left: 2px;
+}
+
+.main-container .content .new-disc .disc-inner .prev:hover {
+  background-position: -280px -75px;
+}
+
+.main-container .content .new-disc .disc-inner .next {
+  background-position: -300px -75px;
+  right: 2px;
+}
+
+.main-container .content .new-disc .disc-inner .next:hover {
+  background-position: -320px -75px;
+}
+
+/* 榜单 */
+.main-container .content .rank {
+  margin-top: 35px;
 }
