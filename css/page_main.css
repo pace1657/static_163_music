@@ -535,7 +535,169 @@
 }
 
 .main-container .content .rank .rank-content {
+  display: flex;
   height: 472px;
   margin-top: 20px;
   background: url("../assets/images/rank-bg.png") no-repeat;
 }
+
+.main-container .content .rank .rank-category {
+  width: 230px;
+}
+
+.main-container .content .rank .rank-title {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+}
+
+.main-container .content .rank-title .album {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.main-container .content .rank-title img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .content .rank-title .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("../assets/images/coverall.png") no-repeat -145px -57px;
+}
+
+.main-container .content .rank-title .info {
+  padding: 10px;
+}
+
+.main-container .content .rank-title .info a:hover {
+  text-decoration: underline;
+}
+
+.main-container .content .rank-title .info .icon {
+  margin-top: 10px;
+}
+
+.main-container .content .rank-title .info .icon a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background: url("../assets/images/content-sprite.png") no-repeat;
+}
+
+.main-container .content .rank-title .info .icon .play {
+  background-position: -267px -205px;
+}
+
+.main-container .content .rank-title .info .icon .play:hover {
+  background-position: -267px -235px;
+}
+
+.main-container .content .rank-title .info .icon .file {
+  background-position: -300px -205px;
+}
+
+.main-container .content .rank-title .info .icon .file:hover {
+  background-position: -300px -235px;
+}
+
+.main-container .content .rank-list .order-list {
+  padding-left: 20px;
+}
+
+.main-container .content .rank-list .item {
+  display: flex;
+  height: 32px;
+  line-height: 32px;
+}
+
+.main-container .content .rank-list .item:nth-child(-n + 3) .no {
+  color: #c10d0c;
+}
+
+.main-container .content .rank-list .item:hover .operate {
+  display: flex;
+  align-items: center;
+}
+
+.main-container .content .rank-list .item .no {
+  width: 32px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.main-container .content .rank-list .item .name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-container .content .rank-list .item .name:hover {
+  text-decoration: underline;
+}
+
+.main-container .content .rank-list .item .operate {
+  display: none;
+  line-height: 32px;
+  width: 85px;
+  padding-left: 5px;
+}
+
+.main-container .content .rank-list .operate a {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  background: url("../assets/images/content-sprite.png") no-repeat;
+}
+
+.main-container .content .rank-list .operate a.add {
+  background: url("../assets/images/icon.png") no-repeat 2px -698px;
+}
+
+.main-container .content .rank-list .operate a.add:hover {
+  background-position: -20px -698px;
+}
+
+.main-container .content .rank-list .operate a.play {
+  background-position: -267px -268px;
+}
+
+.main-container .content .rank-list .operate a.play:hover {
+  background-position: -267px -288px;
+}
+
+.main-container .content .rank-list .operate a.file {
+  background-position: -297px -268px;
+}
+
+.main-container .content .rank-list .operate a.file:hover {
+  background-position: -297px -288px;
+}
+
+.main-container .content .rank-list .more {
+  height: 32px;
+  line-height: 32px;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.main-container .content .rank-list .more a {
+  color: #000;
+}
+
+.main-container .content .rank-list .more a:hover {
+  text-decoration: underline;
+}
+
+
