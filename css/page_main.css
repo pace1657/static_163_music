@@ -150,7 +150,7 @@
 
 .main-container .content .content-left-area {
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 40px;
   overflow: hidden;
 }
 .main-container .content .content-right-area {
@@ -532,4 +532,10 @@
 /* 榜单 */
 .main-container .content .rank {
   margin-top: 35px;
+}
+
+.main-container .content .rank .rank-content {
+  height: 472px;
+  margin-top: 20px;
+  background: url("../assets/images/rank-bg.png") no-repeat;
 }
